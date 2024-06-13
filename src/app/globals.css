@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+/* 
+:root {
+  --white-color: #fff;
+  --main-color: #e85d97;
+  --main-color-hover: #e83781;
+  --blue-color: #3abff8;
+  --blue-color-hover: #0e95cf;
+  --green-color: #37c871;
+  --green-color-hover: #239b53;
+
+  --color-layout: #f0f2f5;
+
+  --tw-ring-color: transparent;
+  --color-infor-store: #252a2b;
+}
+
+[type="text"]:focus,
+[type="email"]:focus,
+[type="url"]:focus,
+[type="password"]:focus,
+[type="number"]:focus,
+[type="date"]:focus,
+[type="datetime-local"]:focus,
+[type="month"]:focus,
+[type="search"]:focus,
+[type="tel"]:focus,
+[type="time"]:focus,
+[type="week"]:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+  @apply border-none;
+}
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif, "Quicksand";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 17px;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: black;
+}
+i,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  padding: 0;
+  margin: 0;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 0px;
+}
+button,
+input,
+[tabIndex] {
+  border: none;
+  outline: none;
+} */
