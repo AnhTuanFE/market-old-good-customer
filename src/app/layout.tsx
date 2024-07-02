@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="">
+        <div className="px-40">
           <Header />
           <Providers>
             <NextUIProvider>{children}</NextUIProvider>

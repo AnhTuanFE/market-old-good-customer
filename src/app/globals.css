@@ -6,6 +6,28 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --white-color: #fff;
+  --main-color: #007aff;
+  --main-color-hover: #3abff8;
+  --blue-color: #3abff8;
+  --blue-color-hover: #0e95cf;
+  --green-color: #37c871;
+  --green-color-hover: #239b53;
+  --red-color: #ff1111;
+  --red-color-hover: #a80202;
+
+  --main-color2: #007fff;
+
+  --color-button1: #ffff;
+  --color-button2: #007fff;
+
+  --color-layout: #000;
+  --color-layout2: #333f48;
+
+  --content-color: #f4f4f4;
+
+  --tw-ring-color: transparent;
+  --color-infor-store: #252a2b;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,18 +1,18 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { IUser, UserRegister } from "./types/user.type";
 
-export const loginApi = createApi({
+export const userApi = createApi({
   reducerPath: "userApi",
   tagTypes: ["services"],
   keepUnusedDataFor: 10,
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:5000/",
+    baseUrl: `${process.env.BASE_API_URL}/api/v1`,
   }),
   endpoints: (build) => ({
     login: build.mutation<IUser, { email: string; password: string }>({
       query(data) {
         return {
-          url: "/api/users/login",
+          url: "/users/login",
           method: "POST",
           body: data,
         };
@@ -24,17 +24,9 @@ export const loginApi = createApi({
     >({
       query(data) {
         return {
-          url: "/api/users/",
+          url: "/users/",
           method: "POST",
           body: data,
-        };
-      },
-    }),
-    getProduct: build.query<any, void>({
-      query() {
-        return {
-          url: "/api/products",
-          method: "GET",
         };
       },
     }),
@@ -43,5 +35,4 @@ export const loginApi = createApi({
     }),
   }),
 });
-export const { useLoginMutation, useRegisterMutation, useGetProductQuery } =
-  loginApi;
+export const { useLoginMutation, useRegisterMutation } = userApi;

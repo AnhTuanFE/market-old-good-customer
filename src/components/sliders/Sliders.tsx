@@ -27,8 +27,6 @@ function Sliders() {
     "image1232.jpg",
     "image1234.jpg",
   ];
-  //mảng có 20 phần tử
-  // =================================================================
   const sliderRef = useRef<any>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
 
