@@ -15,10 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="px-40">
+        <div className=" w-full">
           <Header />
           <Providers>
-            <NextUIProvider>{children}</NextUIProvider>
+            <NextUIProvider className="">{children}</NextUIProvider>
           </Providers>
         </div>
       </body>

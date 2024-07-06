@@ -1,5 +1,6 @@
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { LocalMall } from "@mui/icons-material";
 
 const arrayInfo = [
   {
@@ -126,9 +127,16 @@ function Footer() {
                   border: "1px solid #d2d2d2",
                 }}
               >
-                <FontAwesomeIcon
+                {/* <FontAwesomeIcon
                   className=" px-2 text-xl text-blue-500"
                   icon={faEnvelope}
+                /> */}
+                <LocalMall
+                  fontSize="medium"
+                  className=" px-2 text-xl text-blue-500"
+                  sx={{
+                    color: "black",
+                  }}
                 />
                 <input
                   placeholder="Nhập email của bạn"
