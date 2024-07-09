@@ -56,13 +56,13 @@ function ContactInformation() {
         <HtmlTooltip
           title={
             <div className="min-w-[100px]">
-              <p className="p-2 font-medium text-sm hover:cursor-pointer hover:text-blue-500">
+              <p className="p-2 font-medium text-sm hover:cursor-pointer hover:text-[var(--main-color)]">
                 Tài khoản
               </p>
-              <p className="p-2 font-medium text-sm hover:cursor-pointer hover:text-blue-500">
+              <p className="p-2 font-medium text-sm hover:cursor-pointer hover:text-[var(--main-color)]">
                 Lịch sử
               </p>
-              <p className="p-2 font-medium text-sm hover:cursor-pointer hover:text-blue-500">
+              <p className="p-2 font-medium text-sm hover:cursor-pointer hover:text-[var(--main-color)]">
                 Đăng xuất
               </p>
             </div>
@@ -73,6 +73,11 @@ function ContactInformation() {
               className="w-4 h-4 mr-2"
               alt="user"
               src="./images/gmail.webp"
+              sx={{
+                width: "16px",
+                height: "16px",
+                marginRight: "8px",
+              }}
             />
             <label className="hover:cursor-pointer  hover:opacity-80">
               Tuấn
@@ -83,8 +88,8 @@ function ContactInformation() {
     );
   };
   return (
-    <div className="w-full max-h-6">
-      <div className="flex justify-between bg-black px-40">
+    <div className="max-h-6 overflow-hidden">
+      <div className="flex justify-between">
         <div className="text-white">
           <div className="flex">
             <div className="flex pt-1">
@@ -115,7 +120,7 @@ function ContactInformation() {
           </div>
         </div>
 
-        <div className="min-w-[480px]">
+        <div className="">
           <div className="flex text-white text-xs font-medium mt-1">
             <div>
               <HtmlTooltip
@@ -132,10 +137,10 @@ function ContactInformation() {
                         </div>
                       </div>
                       <div className="flex bg-slate-300">
-                        <button className="flex-1 px-2 py-2 hover:bg-slate-200 hover:text-blue-500 text-sm font-medium">
+                        <button className="flex-1 px-2 py-2 hover:bg-slate-200 hover:text-[var(--main-color)] text-sm font-medium">
                           Đăng nhập
                         </button>
-                        <button className="flex-1 px-2 py-2 hover:bg-slate-200 hover:text-blue-500 text-sm font-medium">
+                        <button className="flex-1 px-2 py-2 hover:bg-slate-200 hover:text-[var(--main-color)] text-sm font-medium">
                           Đăng ký
                         </button>
                       </div>
@@ -158,10 +163,10 @@ function ContactInformation() {
             <HtmlTooltip
               title={
                 <div className="min-w-[100px]">
-                  <p className="p-2 font-medium text-sm hover:cursor-pointer hover:text-blue-500">
+                  <p className="p-2 font-medium text-sm hover:cursor-pointer hover:text-[var(--main-color)]">
                     Tiếng Anh
                   </p>
-                  <p className="p-2 font-medium text-sm hover:cursor-pointer hover:text-blue-500">
+                  <p className="p-2 font-medium text-sm hover:cursor-pointer hover:text-[var(--main-color)]">
                     Tiếng Việt
                   </p>
                 </div>
@@ -194,7 +199,7 @@ function ContactInformation() {
                 <label className="mx-2">|</label>
                 <button className="hover:opacity-80">Đăng nhập</button>
               </div> */}
-              {/* {<UILogined />} */}
+              {<UILogined />}
             </div>
           </div>
         </div>

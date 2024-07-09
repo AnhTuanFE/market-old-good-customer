@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className=" w-full">
+        <div className="bg-[var(--content-color)]">
           <Header />
           <Providers>
             <NextUIProvider className="">{children}</NextUIProvider>

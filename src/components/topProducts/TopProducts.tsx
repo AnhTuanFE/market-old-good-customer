@@ -43,7 +43,10 @@ function TopProducts() {
           <div className="flex h-[290px]">
             {arrImage.map((item) => {
               return (
-                <div key={item.id} className="w-[16.6667%]">
+                <div
+                  key={item.id}
+                  className="w-[16.6667%] hover:cursor-pointer"
+                >
                   <div className="px-[0.625rem] py-[1.25rem]">
                     <div className="relative flex justify-center">
                       <img className="w-[180px] h-[180px]" src={item.url} />

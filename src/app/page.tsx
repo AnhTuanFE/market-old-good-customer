@@ -4,22 +4,30 @@ import { useGetAllProductQuery } from "@/lib/redux/features/products/product.ser
 import Services from "@/components/services/Services";
 import Categories from "@/components/categories/Categories";
 import TopProducts from "@/components/topProducts/TopProducts";
+import DailyProduct from "@/components/products/DailyProduct";
 
 export default function Home() {
   const { data } = useGetAllProductQuery();
   return (
     <>
-      <div className="mt-28 w-[1200px] mx-auto bg-red-100">
+      <div className="pt-28 ">
         <div className="">
-          <div className="min-h-[1000px]">
+          <div className="">
             <div className="">
-              <CustomSlider />
-              <Services />
-              <div className="mt-6"></div>
-              <Categories />
-              <div className="mt-6"></div>
-              <TopProducts />
-              <div className="mt-6 p-5"></div>
+              <div className="bg-white ">
+                <div className="w-[1200px] mx-auto pt-[30px]">
+                  <CustomSlider />
+                  <Services />
+                </div>
+              </div>
+              <div className="w-[1200px] mx-auto ">
+                <div className="mt-6"></div>
+                <Categories />
+                <div className="mt-6"></div>
+                <TopProducts />
+                <div className="mt-6 p-5"></div>
+                <DailyProduct />
+              </div>
             </div>
           </div>
         </div>
