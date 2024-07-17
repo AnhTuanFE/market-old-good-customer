@@ -1,5 +1,5 @@
 import { trimText } from "@/utils/trimText";
-
+import Link from "next/link";
 const arrProductList: {
   id: number;
   text: string;
@@ -101,47 +101,49 @@ function DailyProduct() {
             {arrProductList.map((item) => {
               return (
                 <div key={item.id} className=" bg-white relative ">
-                  <div className="hover:border-[1px] hover:border-red-500 group hover:cursor-pointer">
-                    <div className="relative">
-                      <img className="" src={item.image} />
-                      <div className="absolute bottom-0 left-0">
-                        <img src={item.skin} />
-                      </div>
-                      <div>
-                        <img
-                          src="./images/productDemo/like.png"
-                          className="absolute w-[46px] h-[18px] z-[2] top-0 mt-[0.5rem] left-[-2px]"
-                        />
-                      </div>
-                      <div>
-                        <p className="text-[0.75rem] leading-[0.875rem] absolute top-0 right-0 bg-[#feeeea] text-[var(--main-color)]">
-                          -50%
-                        </p>
-                      </div>
-                    </div>
-                    <div className="p-2">
-                      <div className="text-[0.875rem] leading-[1.25rem] max-w-full pb-1">
-                        {trimText(item.text, 40)}
-                      </div>
-                      <div className="pb-2   ">
-                        <div className=" flex justify-start min-h-[16px]  min-w-10 text-center text-[var(--main-color)] text-[0.625rem]  leading-[.75rem]">
-                          <p className="border-1 border-[var(--main-color)] p-[2px]">
-                            Cheapest
+                  <Link href={"/products"}>
+                    <div className="hover:border-[1px] hover:border-red-500 group hover:cursor-pointer">
+                      <div className="relative">
+                        <img className="" src={item.image} />
+                        <div className="absolute bottom-0 left-0">
+                          <img src={item.skin} />
+                        </div>
+                        <div>
+                          <img
+                            src="./images/productDemo/like.png"
+                            className="absolute w-[46px] h-[18px] z-[2] top-0 mt-[0.5rem] left-[-2px]"
+                          />
+                        </div>
+                        <div>
+                          <p className="text-[0.75rem] leading-[0.875rem] absolute top-0 right-0 bg-[#feeeea] text-[var(--main-color)]">
+                            -50%
                           </p>
                         </div>
                       </div>
+                      <div className="p-2">
+                        <div className="text-[0.875rem] leading-[1.25rem] max-w-full pb-1">
+                          {trimText(item.text, 40)}
+                        </div>
+                        <div className="pb-2   ">
+                          <div className=" flex justify-start min-h-[16px]  min-w-10 text-center text-[var(--main-color)] text-[0.625rem]  leading-[.75rem]">
+                            <p className="border-1 border-[var(--main-color)] p-[2px]">
+                              Cheapest
+                            </p>
+                          </div>
+                        </div>
 
-                      <div>
-                        <label className="text-xs text-orange-500">₫</label>
-                        <label className="text-base text-orange-500 font-medium">
-                          {item.money}
-                        </label>
+                        <div>
+                          <label className="text-xs text-orange-500">₫</label>
+                          <label className="text-base text-orange-500 font-medium">
+                            {item.money}
+                          </label>
+                        </div>
+                      </div>
+                      <div className="absolute hidden group-hover:block py-[6px] text-center bottom-[-26px] z-[1] left-0 right-0 bg-[var(--main-color-hover)] text-white text-sm">
+                        Find Similar
                       </div>
                     </div>
-                    <div className="absolute hidden group-hover:block py-[6px] text-center bottom-[-26px] z-[1] left-0 right-0 bg-[var(--main-color-hover)] text-white text-sm">
-                      Find Similar
-                    </div>
-                  </div>
+                  </Link>
                 </div>
               );
             })}

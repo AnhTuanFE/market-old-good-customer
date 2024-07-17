@@ -19,10 +19,16 @@
 
   --main-color2: #007fff;
   --text-color: #555;
+  --text-color1: #929292;
+  --text-color2: #757575;
+  --text-color3: #636363;
+
   --text-color-hover: #f0f0f0;
 
-  --color-button1: #ffff;
-  --color-button2: #007fff;
+  --color-button1: #ffeee8;
+  --color-button1-hover: #fff5f1;
+  --color-button2: #fc5931;
+  --color-button2-hover: #f05d40;
 
   --color-layout: #000;
   --color-layout2: #333f48;
@@ -43,6 +49,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  font-size: 0.875rem;
 }
 
 /* 
