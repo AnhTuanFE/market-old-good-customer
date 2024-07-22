@@ -92,10 +92,6 @@ function ProductRating() {
           <ProductRatingDetail />
           <ProductRatingDetail />
           <ProductRatingDetail />
-
-          <div>
-            <div>Phân trang</div>
-          </div>
         </div>
       </section>
     </>

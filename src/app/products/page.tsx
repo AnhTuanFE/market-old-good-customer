@@ -4,6 +4,8 @@ import UseInput from "./components/UseInput";
 import ProductsDescribe from "./components/ProductsDescribe";
 import ProductRating from "./components/ProductRating";
 import ShopInfor from "./components/ShopInfor";
+import MyPagination from "./components/MyPagination";
+import DailyProduct from "@/components/products/DailyProduct";
 
 function Products() {
   const arrImage1: {
@@ -395,6 +397,14 @@ function Products() {
           <ShopInfor />
           <ProductsDescribe />
           <ProductRating />
+          <div className="bg-white flex justify-center pb-[25px]">
+            <div>
+              <MyPagination />
+            </div>
+          </div>
+          <div className="mt-7">
+            <DailyProduct />
+          </div>
         </div>
       </div>
     </>

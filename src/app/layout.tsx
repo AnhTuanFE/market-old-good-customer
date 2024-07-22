@@ -4,6 +4,7 @@ import { Providers } from "@/lib/redux/provider";
 import "./globals.css";
 import { NextUIProvider } from "@nextui-org/react";
 import Header from "@/app/rootLayouts/Header";
+import Footer from "./rootLayouts/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
           <Providers>
             <NextUIProvider className="">{children}</NextUIProvider>
           </Providers>
+          <Footer />
         </div>
       </body>
     </html>
